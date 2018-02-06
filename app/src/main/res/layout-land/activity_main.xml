@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <ScrollView tools:context="com.example.android.fencingscore.MainActivity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    -<RelativeLayout android:layout_height="match_parent" android:layout_width="match_parent" android:background="@drawable/en_gard_4">
+
+    <!--page 1-->
+
+
+    <ImageView android:layout_height="match_parent" android:layout_width="match_parent" android:scaleType="fitStart"/>
+
+    <Button android:layout_height="@dimen/dimen_70" android:layout_width="match_parent" android:background="@drawable/background_12" android:textSize="@dimen/size_20" android:textColor="@android:color/background_light" android:text="@string/reset" android:onClick="resetAllScores" android:layout_marginRight="@dimen/dimen_40" android:layout_marginLeft="@dimen/dimen_40" android:layout_marginBottom="@dimen/dimen_20" android:layout_centerHorizontal="true" android:layout_alignParentBottom="true" style="@style/Base.TextAppearance.AppCompat.Widget.Button" android:id="@+id/reset_button"/>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginRight="@dimen/dimen_40" android:layout_marginLeft="@dimen/dimen_40" android:layout_marginBottom="@dimen/dimen_70" android:layout_centerHorizontal="true" android:id="@+id/three_buttons_layout" android:orientation="horizontal" android:layout_marginTop="@dimen/dimen_740" android:elevation="@dimen/dimen_2">
+
+    <Button android:layout_height="@dimen/dimen_60" android:layout_width="match_parent" android:background="@drawable/background_6" android:textSize="@dimen/size_20" android:textColor="@android:color/background_light" android:text="@string/home" android:onClick="displayHome" android:layout_marginRight="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_10" style="@style/Widget.AppCompat.Button" android:id="@+id/home_button" android:gravity="center" android:layout_weight="1"/>
+
+    <Button android:layout_height="60dp" android:layout_width="match_parent" android:background="@drawable/background_6" android:textSize="@dimen/size_20" android:textColor="@android:color/background_light" android:text="@string/statistics" android:onClick="disPlayStatistics" android:layout_marginBottom="10dp" style="@style/Widget.AppCompat.Button" android:id="@+id/statistics_button" android:gravity="center" android:layout_weight="1"/>
+
+    <Button android:layout_height="@dimen/dimen_60" android:layout_width="match_parent" android:background="@drawable/background_6" android:textSize="@dimen/size_20" android:textColor="@android:color/background_light" android:text="@string/help" android:onClick="displayHelpPage" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_10" style="@style/Widget.AppCompat.Button" android:id="@+id/help_button" android:gravity="center" android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="horizontal" android:layout_marginTop="@dimen/dimen_30" android:gravity="center_horizontal">
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="@dimen/zero" android:id="@+id/player_1_layout" android:orientation="vertical" android:gravity="center" android:layout_weight="1">
+
+    <Button android:layout_height="70dp" android:layout_width="120dp" android:textSize="@dimen/size_20" android:textColor="@android:color/background_light" android:text="@string/player_1" android:onClick="declareWinnerPlayer1" style="@android:style/Widget.Holo.Button.Borderless" android:id="@+id/player_1_title" android:layout_marginTop="35dp" android:textStyle="bold" android:fontFamily="serif" android:layout_gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_100" android:textColor="@android:color/holo_red_light" android:text="@string/_0" android:id="@+id/score_player_1"/>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal" android:layout_marginTop="@dimen/dimen_40">
+
+    <Button android:layout_height="@dimen/dimen_115" android:layout_width="@dimen/dimen_90" android:background="@drawable/background_12" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/point_touch" android:onClick="addTouchPointPlayer1" android:layout_marginRight="@dimen/dimen_10" android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu"/>
+
+    <Button android:layout_height="@dimen/dimen_115" android:layout_width="@dimen/dimen_90" android:background="@drawable/backgroud_16" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/point_r_o_w" android:onClick="addRowPointPlayer1" style="@android:style/Widget.Holo.Button" android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="@dimen/dimen_190" android:orientation="horizontal" android:layout_marginTop="@dimen/dimen_25">
+
+    <Button android:layout_height="@dimen/dimen_35" android:layout_width="@dimen/dimen_130" android:background="@drawable/yellow_1" android:onClick="yellowCardStat1" android:layout_marginRight="@dimen/dimen_5" android:layout_weight="1"/>
+
+    <Button android:layout_height="@dimen/dimen_35" android:layout_width="@dimen/dimen_130" android:background="@drawable/black_1" android:onClick="declareWinnerPlayer2" android:layout_marginRight="@dimen/dimen_5" android:layout_weight="1"/>
+
+    <Button android:layout_height="@dimen/dimen_35" android:layout_width="@dimen/dimen_130" android:background="@drawable/red_1" android:textColor="@android:color/black" android:onClick="addRedCardPointPlayer2" android:layout_weight="1"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="@dimen/zero" android:orientation="vertical" android:gravity="center" android:layout_weight="1">
+
+    <Button android:layout_height="@dimen/dimen_70" android:layout_width="@dimen/dimen_120" android:textSize="@dimen/size_20" android:textColor="@android:color/background_light" android:text="@string/player_2" android:onClick="declareWinnerPlayer2" style="@android:style/Widget.Holo.Button.Borderless" android:id="@+id/player_2_title" android:layout_marginTop="@dimen/dimen_35" android:textStyle="bold" android:fontFamily="serif"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_100" android:textColor="@android:color/holo_green_light" android:text="@string/_0" android:id="@+id/score_player_2" android:fontFamily="sans-serif"/>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal" android:layout_marginTop="@dimen/dimen_40">
+
+    <Button android:layout_height="115dp" android:layout_width="@dimen/dimen_90" android:background="@drawable/background_12" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/point_touch" android:onClick="addTouchPointPlayer2" android:layout_marginRight="@dimen/size_10" android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu"/>
+
+    <Button android:layout_height="@dimen/dimen_115" android:layout_width="@dimen/dimen_90" android:background="@drawable/backgroud_16" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/r_o_w_point" android:onClick="addRowPointPlayer2" android:layout_marginRight="10dp"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="@dimen/dimen_190" android:orientation="horizontal" android:layout_marginTop="@dimen/dimen_25">
+
+    <Button android:layout_height="@dimen/dimen_35" android:layout_width="@dimen/dimen_130" android:background="@drawable/yellow_1" android:onClick="yellowCardStatPlayer2" android:layout_marginRight="5dp" android:layout_weight="1"/>
+
+    <Button android:layout_height="@dimen/dimen_35" android:layout_width="@dimen/dimen_130" android:background="@drawable/black_1" android:onClick="declareWinnerPlayer1" android:layout_marginRight="@dimen/dimen_5" android:layout_weight="1"/>
+
+    <Button android:layout_height="@dimen/dimen_35" android:layout_width="@dimen/dimen_130" android:background="@drawable/red_1" android:onClick="addRedCardPointPlayer1" android:layout_marginRight="@dimen/dimen_5" android:layout_weight="1"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <!--end page 1-->
+
+
+    <!--page 2-->
+
+
+
+    -<RelativeLayout android:layout_height="@dimen/dimen_600" android:layout_width="match_parent" android:background="@drawable/background_23" android:layout_marginRight="@dimen/dimen_10" android:layout_marginLeft="@dimen/dimen_10" android:id="@+id/statistics" android:layout_marginTop="@dimen/dimen_75" android:visibility="invisible">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/touch_point" android:layout_centerHorizontal="true" android:layout_marginTop="@dimen/dimen_59" android:textStyle="bold"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/r_o_w_point" android:layout_centerHorizontal="true" android:layout_marginTop="@dimen/dimen_107" android:textStyle="bold"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@android:color/white" android:text="@string/red_card" android:layout_centerHorizontal="true" android:layout_marginTop="@dimen/dimen_158" android:textStyle="bold"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@android:color/white" android:text="@string/yellow_card" android:layout_centerHorizontal="true" android:layout_marginTop="@dimen/dimen_206" android:textStyle="bold"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@android:color/white" android:text="@string/black_card" android:layout_centerHorizontal="true" android:layout_marginTop="@dimen/dimen_255" android:textStyle="bold"/>
+
+
+    -<LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="horizontal" android:gravity="center_horizontal">
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="0dp" android:layout_marginLeft="@dimen/dimen_10" android:id="@+id/statistics_player_1_layout" android:orientation="vertical" android:layout_weight="1">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_20" android:textColor="@android:color/white" android:text="@string/player_1" android:layout_marginTop="@dimen/dimen_10" android:textStyle="bold" android:layout_gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/_0" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_3" android:id="@+id/touch_point_statistics" android:layout_marginTop="@dimen/size_20"/>
+
+    <View android:layout_height="@dimen/dimen_12" android:layout_width="@dimen/dimen_270" android:background="@android:color/holo_green_light" android:id="@+id/bar_1"> </View>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/_0" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_3" android:id="@+id/row_point_statistics" android:layout_marginTop="@dimen/dimen_15"/>
+
+    <View android:layout_height="@dimen/dimen_12" android:layout_width="@dimen/dimen_270" android:background="@android:color/holo_orange_dark" android:id="@+id/bar_2"> </View>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/_0" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_3" android:id="@+id/red_card_point_statistics" android:layout_marginTop="@dimen/dimen_15"/>
+
+    <View android:layout_height="@dimen/dimen_12" android:layout_width="@dimen/dimen_270" android:background="@android:color/holo_red_light" android:id="@+id/bar_3"> </View>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/_0" android:layout_marginLeft="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_3" android:id="@+id/yellow_card_statistics" android:layout_marginTop="@dimen/dimen_15"/>
+
+    <View android:layout_height="@dimen/dimen_12" android:layout_width="@dimen/dimen_270" android:background="@android:color/holo_orange_light" android:id="@+id/bar_4"> </View>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/_0" android:layout_marginLeft="8dp" android:layout_marginBottom="3dp" android:id="@+id/black_card_statistics" android:layout_marginTop="15dp"/>
+
+    <View android:layout_height="@dimen/dimen_12" android:layout_width="@dimen/dimen_270" android:background="@android:color/black" android:id="@+id/bar_5"> </View>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="@dimen/zero" android:layout_marginRight="@dimen/dimen_10" android:layout_marginLeft="@dimen/dimen_5" android:id="@+id/player_2_layout" android:orientation="vertical" android:layout_marginTop="@dimen/dimen_10" android:layout_weight="1">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_20" android:textColor="@android:color/white" android:text="@string/player_2" android:textStyle="bold" android:layout_gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/_0" android:layout_marginRight="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_3" android:id="@+id/touch_point_statistics_2" android:layout_marginTop="@dimen/dimen_20" android:layout_gravity="right"/>
+
+    <View android:layout_height="@dimen/dimen_12" android:layout_width="@dimen/dimen_270" android:background="@android:color/holo_green_light" android:id="@+id/bar_1_playe2"> </View>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/_0" android:layout_marginRight="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_3" android:id="@+id/row_point_statistics_2" android:layout_marginTop="@dimen/dimen_15" android:layout_gravity="right"/>
+
+    <View android:layout_height="@dimen/dimen_12" android:layout_width="@dimen/dimen_270" android:background="@android:color/holo_orange_dark" android:id="@+id/bar_2_player2"> </View>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/_0" android:layout_marginRight="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_3" android:id="@+id/red_card_point_statistics_2" android:layout_marginTop="15dp" android:layout_gravity="right"/>
+
+    <View android:layout_height="@dimen/dimen_12" android:layout_width="@dimen/dimen_270" android:background="@android:color/holo_red_light" android:id="@+id/bar_3_player3"> </View>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/_0" android:layout_marginRight="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_3" android:id="@+id/yellow_card_statistics_2" android:layout_marginTop="@dimen/dimen_15" android:layout_gravity="right"/>
+
+    <View android:layout_height="@dimen/dimen_12" android:layout_width="@dimen/dimen_270" android:background="@android:color/holo_orange_light" android:id="@+id/bar_4_player4"> </View>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="@dimen/size_15" android:textColor="@android:color/white" android:text="@string/_0" android:layout_marginRight="@dimen/dimen_8" android:layout_marginBottom="@dimen/dimen_3" android:id="@+id/black_card_statistics_2" android:layout_marginTop="@dimen/dimen_15" android:layout_gravity="right"/>
+
+    <View android:layout_height="@dimen/dimen_12" android:layout_width="@dimen/dimen_270" android:background="@android:color/black" android:id="@+id/bar_5_player5"> </View>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
+
+    <!--end page 2-->
+
+
+    <!--page 3-->
+
+
+
+    -<ScrollView android:layout_height="wrap_content" android:layout_width="match_parent" android:background="@drawable/background_23" android:id="@+id/help_page" android:elevation="@dimen/dimen_1" android:visibility="invisible" android:paddingBottom="@dimen/dimen_120">
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:paddingTop="@dimen/dimen_10">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@android:color/white" android:text="@string/header_1" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10" android:gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_1" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_10" android:layout_marginBottom="@dimen/dimen_20"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@android:color/white" android:text="@string/header_2" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10" android:gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_2" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_3" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_4" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@android:color/white" android:text="@string/header_3" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10" android:gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_5" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/text_6" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/text_7" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@android:color/white" android:text="@string/header_4" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10" android:gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_8" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_9" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@android:color/white" android:text="@string/header_5" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10" android:gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_10" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@android:color/white" android:text="@string/header_6" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10" android:gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_11" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_12" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_13" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="@android:color/white" android:text="@string/header_7" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10" android:gravity="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="@string/help_text_14" android:layout_marginRight="@dimen/dimen_20" android:layout_marginLeft="@dimen/dimen_20" android:layout_marginBottom="@dimen/dimen_10"/>
+
+</LinearLayout>
+
+</ScrollView>
+
+    <!--end page 3-->
+
+
+</RelativeLayout>
+
+</ScrollView>

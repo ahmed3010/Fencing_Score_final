@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.fencingscore.MainActivity">
+
+
+    <!--page 1-->
+
+
+    <ImageView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/en_gard_4"
+        android:scaleType="fitStart" />
+
+
+    <Button
+
+        android:id="@+id/reset_button"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_40"
+        android:layout_marginRight="@dimen/dimen_40"
+        android:background="@drawable/background_12"
+        android:onClick="resetAllScores"
+        android:text="@string/reset"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/size_20" />
+
+    <LinearLayout
+        android:id="@+id/three_buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_65"
+        android:layout_marginLeft="@dimen/dimen_40"
+        android:layout_marginRight="@dimen/dimen_40"
+        android:elevation="@dimen/dimen_2"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/home_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:background="@drawable/background_6"
+            android:gravity="center"
+            android:onClick="displayHome"
+            android:text="@string/home"
+            android:textColor="@android:color/background_light" />
+
+
+        <Button
+            android:id="@+id/statistics_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:background="@drawable/background_6"
+            android:gravity="center"
+            android:onClick="disPlayStatistics"
+            android:text="@string/statistics"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/help_button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_6"
+            android:gravity="center"
+            android:onClick="displayHelpPage"
+            android:text="@string/help"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/player_1_layout"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+
+                android:id="@+id/player_1_title"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="@dimen/dimen_120"
+                android:layout_height="@dimen/dimen_70"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_35"
+                android:fontFamily="serif"
+                android:onClick="declareWinnerPlayer1"
+                android:text="@string/player_1"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/size_20"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/score_player_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/size_70" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="@dimen/dimen_55"
+                    android:layout_height="@dimen/dimen_70"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:background="@drawable/background_12"
+                    android:onClick="addTouchPointPlayer1"
+                    android:text="@string/point_touch"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_10" />
+
+                <Button
+                    style="@android:style/Widget.Holo.Button"
+                    android:layout_width="@dimen/dimen_55"
+                    android:layout_height="@dimen/dimen_70"
+                    android:background="@drawable/backgroud_16"
+                    android:onClick="addRowPointPlayer1"
+                    android:text="@string/point_r_o_w"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_10" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_120"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_width="@dimen/dimen_32"
+                    android:layout_height="@dimen/dimen_27"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/yellow_1"
+                    android:onClick="yellowCardStat1" />
+
+                <Button
+                    android:layout_width="@dimen/dimen_32"
+                    android:layout_height="@dimen/dimen_27"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_1"
+                    android:onClick="declareWinnerPlayer2" />
+
+                <Button
+                    android:layout_width="@dimen/dimen_32"
+                    android:layout_height="@dimen/dimen_27"
+                    android:layout_weight="1"
+                    android:background="@drawable/red_1"
+                    android:onClick="addRedCardPointPlayer2"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/player_2_title"
+                style="@android:style/Widget.Holo.Button.Borderless"
+                android:layout_width="@dimen/dimen_120"
+                android:layout_height="@dimen/dimen_70"
+                android:layout_marginTop="@dimen/dimen_35"
+                android:fontFamily="serif"
+                android:onClick="declareWinnerPlayer2"
+                android:text="@string/player_2"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/size_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_player_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="@string/_0"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="@dimen/size_70" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="@dimen/dimen_55"
+                    android:layout_height="@dimen/size_70"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:background="@drawable/background_12"
+                    android:onClick="addTouchPointPlayer2"
+                    android:text="@string/point_touch"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_10" />
+
+
+                <Button
+                    android:layout_width="@dimen/dimen_55"
+                    android:layout_height="@dimen/dimen_70"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:background="@drawable/backgroud_16"
+                    android:onClick="addRowPointPlayer2"
+                    android:text="@string/point_r_o_w"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_10" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_120"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_25"
+                android:orientation="horizontal">
+
+
+                <Button
+
+                    android:layout_width="@dimen/dimen_32"
+                    android:layout_height="@dimen/dimen_27"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/yellow_1"
+                    android:onClick="yellowCardStatPlayer2" />
+
+                <Button
+
+                    android:layout_width="@dimen/dimen_32"
+                    android:layout_height="@dimen/dimen_27"
+                    android:layout_marginRight="@dimen/dimen_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/black_1"
+                    android:onClick="declareWinnerPlayer1" />
+
+                <Button
+
+                    android:layout_width="@dimen/dimen_32"
+                    android:layout_height="@dimen/dimen_27"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/red_1"
+                    android:onClick="addRedCardPointPlayer1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--end page 1-->
+
+    <!--page 2-->
+
+    <RelativeLayout
+
+        android:id="@+id/statistics"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_350"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_75"
+        android:background="@drawable/background_23"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_59"
+            android:text="@string/touch_point"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_107"
+            android:text="@string/r_o_w_point"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_158"
+            android:text="Red Card"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_206"
+            android:text="Yellow Card"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_255"
+            android:text="Black Card"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/statistics_player_1_layout"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/player_1"
+
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/touch_point_statistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_15" />
+
+                <View
+                    android:id="@+id/bar_1"
+                    android:layout_width="@dimen/dimen_160"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@android:color/holo_green_light">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/row_point_statistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_3"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_15" />
+
+                <View
+                    android:id="@+id/bar_2"
+                    android:layout_width="@dimen/dimen_160"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@android:color/holo_orange_dark">
+
+                </View>
+
+
+                <TextView
+                    android:id="@+id/red_card_point_statistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_3"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_15" />
+
+
+                <View
+                    android:id="@+id/bar_3"
+                    android:layout_width="@dimen/dimen_160"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@android:color/holo_red_light">
+
+                </View>
+
+
+                <TextView
+                    android:id="@+id/yellow_card_statistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_3"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_15" />
+
+
+                <View
+                    android:id="@+id/bar_4"
+                    android:layout_width="@dimen/dimen_160"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@android:color/holo_orange_light">
+
+                </View>
+
+
+                <TextView
+                    android:id="@+id/black_card_statistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_3"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_15" />
+
+                <View
+                    android:id="@+id/bar_5"
+                    android:layout_width="@dimen/dimen_160"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@android:color/black">
+
+                </View>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/player_2_layout"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/player_2"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_20"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/touch_point_statistics_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/dimen_3"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_20"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_15" />
+
+
+                <View
+                    android:id="@+id/bar_1_playe2"
+                    android:layout_width="@dimen/dimen_160"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@android:color/holo_green_light">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/row_point_statistics_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/dimen_3"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_15" />
+
+
+                <View
+                    android:id="@+id/bar_2_player2"
+                    android:layout_width="160dp"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@android:color/holo_orange_dark">
+
+                </View>
+
+
+                <TextView
+                    android:id="@+id/red_card_point_statistics_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/dimen_3"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_15" />
+
+                <View
+                    android:id="@+id/bar_3_player3"
+                    android:layout_width="@dimen/dimen_160"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@android:color/holo_red_light">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/yellow_card_statistics_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/dimen_3"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_15" />
+
+                <View
+                    android:id="@+id/bar_4_player4"
+                    android:layout_width="@dimen/dimen_160"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@android:color/holo_orange_light">
+
+                </View>
+
+                <TextView
+                    android:id="@+id/black_card_statistics_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="@dimen/dimen_3"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_15"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size_15" />
+
+                <View
+                    android:id="@+id/bar_5_player5"
+                    android:layout_width="@dimen/dimen_160"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@android:color/black">
+
+                </View>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--end page 2-->
+
+    <!--page 3-->
+
+    <ScrollView
+        android:id="@+id/help_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_23"
+        android:elevation="@dimen/dimen_1"
+        android:paddingBottom="@dimen/dimen_120"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dimen_20">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:gravity="center"
+                android:text="@string/header_1"
+                android:textColor="@android:color/white" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:gravity="center"
+                android:text="@string/header_2"
+                android:textColor="@android:color/white" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:gravity="center"
+                android:text="@string/header_3"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/text_6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/text_7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:gravity="center"
+                android:text="@string/header_4"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:gravity="center"
+                android:text="@string/header_5"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:gravity="center"
+                android:text="@string/header_6"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_11" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_13" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:gravity="center"
+                android:text="@string/header_7"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_20"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:text="@string/help_text_14" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!--end page 3-->
+
+</RelativeLayout>

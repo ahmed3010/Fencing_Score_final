@@ -1,0 +1,70 @@
+<resources>
+
+
+
+ <string name="app_name">Fencing Score</string>
+
+ <string name="touch_point">Touch Point</string>
+
+
+ <string name="header_1">Introduction</string>
+
+ <string name="help_text_1">This app is intended to count score of Fencing Individual Competition for only two types of fencing discipline  ‘ Foil and  Sabre’   the third discipline ’Epee’  and the team competition score is to be added in the next version.
+   </string>
+
+
+ <string name="header_2">Fencing Disciplines</string>
+
+ <string name="help_text_2">Foil: points are scored with the touch of the tip of the blade only (R.o.W. applied).</string>
+
+ <string name="help_text_3">Sabre: points are scored with the blade’s front edge , the last one third of its back edge or the tip(R.o.W. applied).</string>
+ <string name="help_text_4">Epee: points scored only with the touch of the tip of the blade (R.o.W. is not applied)</string>
+
+
+
+ <string name="header_3"> Ways to score points </string>
+
+ <string name="help_text_5">Touch point: The fencer who touches the opponents at the target area awarded one point </string>
+ <string name="text_6">R.O.W. : A point awarded to one fencer upon referee decision when both fencer touches each other at the same time.  </string>
+
+ <string name="text_7">Red Card :  When a fencer gained a penalty red card, the opponents awarded one point. </string>
+
+
+
+ <string name="header_4">Penalty Cards</string>
+
+ <string name="help_text_8">Black Card: When a fencer gained a black card The opponents is declared a winner  </string>
+ <string name="help_text_9">Yellow Card :  A fencer penalized with a yellow card is warned, but no other action is taken.  </string>
+
+
+ <string name="header_5">Duration </string>
+ <string name="help_text_10"> Bout is a maximum of 9 minutes long divided equally into 3 periods with 1 minute break between periods.  </string>
+
+
+ <string name="header_6"> How the winner is declared? </string>
+
+ <string name="help_text_11">1- the winner is the first to score 15 touches on the opponent.</string>
+ <string name="help_text_12">2- If the third period is completed before either fencer reaches 15 points, the fencer with higher score is declared winner. </string>
+ <string name="help_text_13">3-	A fencer is declared a winner once the opponents gained black Card. </string>
+
+
+
+ <string name="header_7">What is Right of Way (R.o.W.)?</string>
+
+ <string name="help_text_14"> When both fencer landed a touch at the same time, the referee decide which fencer who had the priority to be awarded the point (i.e. the attacking fencer).</string>
+ <string name="reset">RESET</string>
+ <string name="home">Home</string>
+ <string name="statistics">statistics</string>
+ <string name="help">help</string>
+ <string name="player_1">Player 1</string>
+ <string name="_0">0</string>
+ <string name="point_touch">+point Touch</string>
+ <string name="point_r_o_w">+point R.O.W.</string>
+ <string name="player_2">Player 2</string>
+ <string name="r_o_w_point">+point R.O.W.</string>
+ <string name="red_card">Red Card</string>
+ <string name="yellow_card">Yellow Card</string>
+ <string name="black_card">Black Card</string>
+
+
+</resources>

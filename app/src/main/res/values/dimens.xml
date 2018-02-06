@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+
+    <dimen name="dimen_10">10dp</dimen>
+
+    <dimen name="dimen_20">20dp</dimen>
+
+    <dimen name="dimen_30">30dp</dimen>
+
+    <dimen name="dimen_32">32dp</dimen>
+
+    <dimen name="dimen_27">27dp</dimen>
+
+    <dimen name="dimen_40">40dp</dimen>
+
+    <dimen name="dimen_50">50dp</dimen>
+
+    <dimen name="dimen_60">60dp</dimen>
+
+    <dimen name="dimen_70">70dp</dimen>
+
+    <dimen name="dimen_75">75dp</dimen>
+
+    <dimen name="dimen_80">80dp</dimen>
+
+    <!--Sizes Dimentions -->
+
+
+    <dimen name="size_10">10sp</dimen>
+
+    <dimen name="size_20">20sp</dimen>
+
+    <dimen name="size_30">30sp</dimen>
+
+    <dimen name="size_40">40sp</dimen>
+
+    <dimen name="size_50">50sp</dimen>
+
+    <dimen name="size_60">60sp</dimen>
+
+    <dimen name="size_80">80sp</dimen>
+
+    <dimen name="size_90">90sp</dimen>
+
+    <dimen name="dimen_65">65dp</dimen>
+
+    <dimen name="zero">0dp</dimen>
+
+    <dimen name="dimen_120">120dp</dimen>
+
+    <dimen name="dimen_35">35dp</dimen>
+
+    <dimen name="dimen_55">55dp</dimen>
+
+    <dimen name="diemn_4">5dp</dimen>
+
+    <dimen name="dimen_5">5dp</dimen>
+
+    <dimen name="size_70">70sp</dimen>
+
+    <dimen name="dimen_25">25dp</dimen>
+
+    <dimen name="dimen_350">350dp</dimen>
+
+    <dimen name="dimen_59">59dp</dimen>
+
+    <dimen name="dimen_107">107dp</dimen>
+
+    <dimen name="dimen_158">158dp</dimen>
+
+    <dimen name="dimen_206">206dp</dimen>
+
+    <dimen name="dimen_255">255dp</dimen>
+
+    <dimen name="dimen_8">8dp</dimen>
+
+    <dimen name="size_15">15sp</dimen>
+
+    <dimen name="dimen_160">160dp</dimen>
+
+    <dimen name="dimen_3">3dp</dimen>
+
+    <dimen name="dimen_15">15dp</dimen>
+
+    <dimen name="dimen_740">740dp</dimen>
+
+    <dimen name="size_100">100sp</dimen>
+
+    <dimen name="dimen_90">90dp</dimen>
+
+    <dimen name="dimen_115">115dp</dimen>
+
+    <dimen name="dimen_190">190dp</dimen>
+
+    <dimen name="dimen_130">130dp</dimen>
+
+    <dimen name="dimen_600">600dp</dimen>
+
+    <dimen name="dimen_270">270dp</dimen>
+
+    <dimen name="dimen_12">12dp</dimen>
+
+    <dimen name="dimen_1">1dp</dimen>
+
+    <dimen name="dimen_2">2dp</dimen>
+
+</resources>
